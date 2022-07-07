@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 # encoding: utf-8
 
+import dis
+
+
 def magic_calculation(a, b):
-    from magic_calculation_102 import add, sub
+    from calculator_1 import add, sub
     if a < b:
         c = add(a, b)
         for i in range(4, 6):
@@ -10,4 +13,6 @@ def magic_calculation(a, b):
         return (c)
     else: 
         return (sub(a, b))
+
+dis.dis(magic_calculation)
     
