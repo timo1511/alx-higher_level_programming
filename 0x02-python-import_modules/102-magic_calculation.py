@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
 
-def magic_calculation (*args):
-    nargs = len(args)
-    print(nargs, args)
+def magic_calculation (a, b):
+    nargs = len(a, b)
+    print(nargs, a, b)
 
 
 if __name__ == '__main__':
