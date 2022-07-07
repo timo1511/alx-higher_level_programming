@@ -2,8 +2,8 @@
 
 
 def magic_calculation (a, b):
-    nargs = len(a, b)
-    print(nargs, a, b)
+    
+    print(a, b)
 
 
 if __name__ == '__main__':
