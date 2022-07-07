@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 # encoding: utf-8
 
-def magic_calculation(*args):
-    nargs = len(args)
-    print(nargs, (args))
-
-if __name__ == '__main__':
-    import dis
-    dis.dis(magic_function)
+def magic_calculation(a, b):
+    from dis import add, sub
+    if a < b:
+        c = add(a, b)
+        for i in range(4, 6):
+            c = add(c, i)
+        return (c)
+    else: 
+        return (sub(a, b))
