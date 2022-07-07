@@ -9,12 +9,12 @@ if __name__ == "__main__":
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
 
-    elif sys.argv[2] != operators:
+    elif sys.argv[2] not in operators:
         print("Unknown operator. Availabor operators: +, -, * and /")
         exit(1)
     else:
         a = int(sys.argv[1])
-        b = int(sys.argv[3])
+        b = int(sys.argv[2])
         if sys.argv[2] == "+":
             print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
 
