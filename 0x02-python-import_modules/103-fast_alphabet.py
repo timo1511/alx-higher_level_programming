@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 import string
-for letter in string.ascii_uppercase:print(letter, end=" ")
+for i in string.ascii_uppercase: print(i,end="")
 print("\n")
