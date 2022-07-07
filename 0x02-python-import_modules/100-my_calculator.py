@@ -14,7 +14,6 @@ if __name__ == "__main__":
         exit(1)
     else:
         a = int(sys.argv[1])
-        b = int(sys.argv[3i])
         if sys.argv[2] == "+":
             print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
 
